@@ -1,5 +1,5 @@
 :root {
-    --dark: dodgerblue;
+    --dodgerblue: dodgerblue;
     --light: white;
     --navlink-color: blue;
 }
@@ -9,6 +9,11 @@
 /* wire fram: TODO delete later */
 header, main, footer {
     border: 1px solid navy;
+}
+
+header, footer {
+    background-color: dodgerblue;
+    color: white;
 }
 
 
@@ -40,6 +45,12 @@ main {
     height: 100vh;
     justify-content: space-between;
     padding: 1.5rem;
+    background-color: black;
+    color: dodgerblue;
+}
+
+.nav {
+    display: block;
 }
 
 /* classes */
@@ -52,35 +63,43 @@ main {
     padding-top: 1.5rem;
 }
 
+.p {
+    max-width: fit-content;
+}
+
 .section-about {
     display: flex;
     flex-direction: column;
     box-shadow: 0px 3px 20px blue;
-    flex-grow: 0.3
+    flex-grow: 1;
+    align-content: inherit;
+    max-width: 95%;
 }
 
 .section-contact {
     display: flex;
     flex-direction: column;
     box-shadow: 0px 3px 20px blue;
-    flex-grow: 0.3
+    flex-grow: 1;
+    align-content: inherit;
+    max-width: 95%;
 }
 
 .section-work {
     display: flex;
     flex-direction: column;
     box-shadow: 0px 3px 20px blue;
-    flex-grow: 0.3
+    flex-grow: 1;
+    align-content: inherit;
+    max-width: 95%;
 }
 
 
 
 /* Media Queries  */
 
-@media screen and{min-width: 280px and max-width: 1200px;
-    header {
-        background-color: black;
-        color: white;
+@media screen and{min-width: 623px;
+    .nav {
+        display: none;
     }
-    
 }
