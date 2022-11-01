@@ -1,7 +1,8 @@
 :root {
     --dodgerblue: dodgerblue;
-    --light: white;
+    --white: white;
     --navlink-color: blue;
+    --black: black;
 }
 
 
@@ -12,8 +13,8 @@ header, main, footer {
 }
 
 header, footer {
-    background-color: dodgerblue;
-    color: white;
+    background-color: var(--dodgerblue);
+    color: var(--white);
 }
 
 
@@ -38,6 +39,11 @@ header {
     flex-wrap: wrap;
 }
 
+img {
+    max-width: fit content;
+    max-height: fit-content;
+}
+
 main {
     display: flex;
     flex-wrap: wrap;
@@ -45,8 +51,8 @@ main {
     height: 100vh;
     justify-content: space-between;
     padding: 1.5rem;
-    background-color: black;
-    color: dodgerblue;
+    background-color: var(--black);
+    color: var(--dodgerblue);
 }
 
 
@@ -54,7 +60,7 @@ main {
 /* classes */
 
 .h1-header {
-    text-shadow: 2px 2px 2px black;
+    text-shadow: 2px 2px 2px var(--black);
 }
 
 .mt {
@@ -77,7 +83,7 @@ main {
 .section-about {
     display: flex;
     flex-direction: column;
-    box-shadow: 0px 3px 20px dodgerblue;
+    box-shadow: 0px 0px 10px var(--dodgerblue);
     flex-grow: 1;
     align-content: inherit;
     max-width: 95%;
@@ -87,7 +93,7 @@ main {
 .section-contact {
     display: flex;
     flex-direction: column;
-    box-shadow: 0px 3px 20px orange;
+    box-shadow: 0px 0px 10px orange;
     flex-grow: 1;
     align-content: inherit;
     max-width: 95%;
@@ -97,7 +103,7 @@ main {
 .section-work {
     display: flex;
     flex-direction: column;
-    box-shadow: 0px 3px 20px orangered;
+    box-shadow: 0px 0px 10px orangered;
     flex-grow: 1;
     align-content: inherit;
     max-width: 95%;
