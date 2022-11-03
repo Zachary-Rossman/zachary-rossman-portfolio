@@ -7,11 +7,6 @@
 
 
 
-/* wire fram: TODO delete later */
-header, main, footer {
-    border: 1px solid navy;
-}
-
 header, footer {
     background-color: var(--dodgerblue);
     color: var(--white);
